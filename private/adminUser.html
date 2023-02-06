@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>
+        Admin Panel
+    </h1>
+    <div id="commands">
+        <div id="addEvent" class="panel">
+            <h2 id="eventsPanel">Event Management</h2>
+            <div class="adminFunc" id="eventsFunc">
+                
+                <div id="eventTools">
+                    <div id="addEventTool">
+                        
+                        <h3>Add Event</h3>
+                        
+                        <form id="eventAdder">
+                            <label for="eventName">Name of Event: </label>
+                            <input type="text" id="eventName" name="eventName">
+                            <label for="eventDate">Day of Event: </label>
+                            <input type="date" id="eventDate" name="eventDate">
+                        </form>
+                        <input type="button" id="submitEvent" name="submitEvent" value="Add Event">
+
+                    </div>
+                    <div id="removeEventTool">
+
+                        <h3>RemoveEvent</h3>
+
+                        <form id="eventRemover">
+                            <label for="eventId">Event ID: </label>
+                            <input type="text" id="eventId" name="eventId">
+                        </form>
+                        <input type="button" id="removeEvent" name="removeEvent" value="Remove Event">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="seeEmails" class="panel">
+            <h2 id="emailPanel">Email List</h2>
+            <div class="adminFunc" id="emailFunc">
+                
+                <div id="emailTools">
+                    <div>
+                        <h3>Send Newsletter Email</h3>
+                    </div>
+
+                    <form id="emailer">
+                        <label for="subject">Subject: </label>
+                        <br>
+                        <input type="text" id="subject" name="subject">
+                        <br>
+                        <label for="emailBody">Message: </label>
+                        <br>
+                        <textarea id="emailBody" name="emailBody"></textarea>
+                        <br>
+                    </form>
+                    <input type="button" id="sendEmail" name="sendEmail" value="Send Email">
+
+                </div>
+
+            </div>
+        </div>
+        <div id="howTo" class="panel">
+            <h2 id="aboutPanel">How to Use Admin Functions</h2>
+            <div class="adminFunc" id="aboutFunc">
+                <p class="description">How to use each admin function:</p>
+            </div>
+        </div>
+    </div>
+    <script src="/adminuser/js"></script>
+</body>
+</html>
